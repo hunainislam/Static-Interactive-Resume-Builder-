@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Interactive Resume Builder</title>
+    <title>Milestone-Based Interactive Resume Builder</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -44,7 +44,43 @@
                 <p id="work-info">Front-End Developer at (2024-Present)</p>
             </section>
         </main>
-        <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+    
+        <footer>
+            <button id="toggle-skills" style="background-color: aqua; border-radius: 6px;">Your Skills</button>
+            <button id="edit-resume" style="background-color: aqua; border-radius: 6px;">Edit Form</button>
+            <button id="generate-resume" style="background-color: aqua; border-radius: 6px;">Generate Form</button>
+            <button id="copy-link" style="background-color: aqua; border-radius: 6px;">Share Form</button>
+            <!-- <p id="copy-link"></p> -->
+            <button id="download-pdf" style="background-color: aqua; border-radius: 6px;">Download Form as PDF</button>
+        </footer>
+    
+        <section id="resume-form" style="display: none;">
+            <h2 style="color: aqua;">Fill Out Your Form</h2>
+            <form id="resume-builder-form">
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-input" name="name" required style="background-color: aqua;"><br>
+    
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email" required style="background-color: aqua;"><br>
+    
+                <label for="education-input">Education:</label>
+                <input type="text" id="education-input" name="education" required style="background-color: aqua;"><br>
+    
+                <label for="skills-input">Skills:</label>
+                <input type="text" id="skills-input" name="skills" required style="background-color: aqua;"><br>
+    
+                <label for="work-input">Work Experience:</label>
+                <input type="text" id="work-input" name="work" required style="background-color: aqua;"><br>
+    
+                <button type="submit" style="background-color: aqua; border-radius: 6px;">Submit</button>
+            </form>
+        </section>
+    
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+      </body>
+
+      <script src="finisher-header.es5.min.js" type="text/javascript"></script>
 
       <script type="text/javascript">
         new FinisherHeader({
@@ -85,58 +121,57 @@
           ]
         });
         </script>
-
         <section class="banner">
-            <img src="hunain.png" width="150" height="150" alt="no image">
-           <div class="banner-content">
-             <h2 style="color: aqua;">Hello</h2>
-             <p>
-               I'm Malik Hunain, a talented frontend developer that loves creating immersive
-               web experiences.
-             </p>
-           </div>
-         </section>
-     
-         <svg
-           xmlns="http://www.w3.org/2000/svg"
-           xmlns:xlink="http://www.w3.org/1999/xlink"
-           viewBox="0 24 150 28"
-           preserveAspectRatio="none"
-         >
-           <defs>
-             <path
-               id="gentle-wave"
-               d="M-160 44c30 0 
-             58-18 88-18s
-             58 18 88 18 
-             58-18 88-18 
-             58 18 88 18
-             v44h-352z"
-             />
-           </defs>
-           <g class="waves">
-             <use
-               xlink:href="#gentle-wave"
-               x="50"
-               y="0"
-               fill="#03ffff"
-               fill-opacity=".2"
-             />
-             <use
-               xlink:href="#gentle-wave"
-               x="50"
-               y="3"
-               fill="#03ffff"
-               fill-opacity=".5"
-             />
-             <use
-               xlink:href="#gentle-wave"
-               x="50"
-               y="6"
-               fill="#03ffff"
-               fill-opacity=".9"
-             />
-           </g>
-         </svg>
-        </body>
-        </html>
+           <img src="hunain.png" width="150" height="150" alt="no image">
+          <div class="banner-content">
+            <h2 style="color: aqua;">Hello</h2>
+            <p>
+              I'm Malik Hunain, a talented frontend developer that loves creating immersive
+              web experiences.
+            </p>
+          </div>
+        </section>
+    
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 
+            58-18 88-18s
+            58 18 88 18 
+            58-18 88-18 
+            58 18 88 18
+            v44h-352z"
+            />
+          </defs>
+          <g class="waves">
+            <use
+              xlink:href="#gentle-wave"
+              x="50"
+              y="0"
+              fill="#03ffff"
+              fill-opacity=".2"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="50"
+              y="3"
+              fill="#03ffff"
+              fill-opacity=".5"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="50"
+              y="6"
+              fill="#03ffff"
+              fill-opacity=".9"
+            />
+          </g>
+        </svg>
+</body>
+</html>  
